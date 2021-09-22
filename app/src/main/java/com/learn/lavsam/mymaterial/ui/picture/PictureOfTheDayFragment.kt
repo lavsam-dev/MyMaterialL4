@@ -117,7 +117,6 @@ class PictureOfTheDayFragment : Fragment() {
             is PictureOfTheDayData.Success -> {
                 val serverResponseData = data.serverResponseData
                 val url = serverResponseData.url
-                text_description.text = serverResponseData.explanation
                 bottom_sheet_description.text = serverResponseData.explanation
                 bottom_sheet_description_header.text = serverResponseData.title
                 bottom_sheet_description_date.text = apiDate
